@@ -80,19 +80,19 @@
             class="w-full md:w-1/3 p-4"
           >
             <div
-              class="bg-gradient-to-b from-gray-800 to-gray-900 rounded-xl shadow-lg"
+              class="bg-gradient-to-b from-blue-800 to-gray-900 rounded-xl shadow-lg"
             >
               <div
                 class="bg-cover bg-center w-full h-64 rounded-xl transform scale-100 md:scale-105 shadow-lg"
-                style="
-                  background-image: url(https://images.unsplash.com/photo-1605940169841-60884072a854?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
-                "
+                style="background-image: url(samples/image1.webp)"
               ></div>
               <div class="p-4">
-                <p class="font-sans text-sm font-bold text-gray-700">
+                <p class="font-sans text-sm font-bold text-blue-700">
                   Yesterday &bull; #fun #fancy
                 </p>
-                <h2 class="font-sans pb-4 text-2xl font-bold text-gray-500">
+                <h2
+                  class="font-sans pb-4 pt-2 text-2xl font-bold text-gray-500"
+                >
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit
                 </h2>
                 <p class="font-sans text-gray-600">
