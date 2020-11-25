@@ -63,10 +63,10 @@
         </p>
       </div>
     </div>
-    <div class="bg-gray-900">
+    <div class="bg-gray-900 min-h-screen">
       <div class="container mx-auto relative">
         <span
-          class="hidden md:block absolute h-64 w-64 bg-gradient-to-r from-blue-700 via-blue-800 to-blue-900 top-0 mt-12 ml-20 rounded-full z-0 shadow-lg"
+          class="hidden md:block absolute h-64 w-64 bg-gradient-to-t from-blue-800 to-gray-900 top-0 mt-12 ml-20 rounded-full z-0 shadow-lg"
         ></span>
         <h1
           class="text-center md:text-left absolute w-full pt-16 font-blog text-6xl text-blue-400 z-10"
@@ -105,6 +105,53 @@
             </div>
           </div>
           <a href="#" class="my-12 text-center w-full text-blue-800"
+            >See them all &rarr;</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-100 min-h-screen">
+      <div class="container mx-auto relative">
+        <span
+          class="hidden md:block absolute h-64 w-64 bg-gradient-to-t from-pink-800 to-pink-900 top-0 mt-12 ml-20 rounded-full z-0 shadow-lg"
+        ></span>
+        <h1
+          class="text-center md:text-left absolute w-full pt-16 font-project text-6xl text-pink-400 z-10"
+        >
+          PROJECTS
+        </h1>
+        <div class="relative flex flex-wrap pt-48 z-20">
+          <div
+            v-for="index in [1, 2, 3]"
+            :key="index"
+            class="w-full md:w-1/2 p-4"
+          >
+            <div
+              class="bg-gradient-to-b from-gray-300 to-gray-400 rounded-xl shadow-sm"
+            >
+              <div
+                class="bg-cover bg-center w-full h-64 rounded-xl transform scale-100 md:scale-105 shadow-lg"
+                style="background-image: url(samples/image2.jpg)"
+              ></div>
+              <div class="p-4">
+                <p class="font-sans text-sm font-bold text-gray-700">
+                  Yesterday &bull; #fun #fancy
+                </p>
+                <h2
+                  class="font-sans pb-4 pt-2 text-2xl font-bold text-gray-900"
+                >
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit
+                </h2>
+                <p class="font-sans text-gray-800">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Commodi nulla minima consequuntur temporibus, aliquid delectus
+                  vitae sapiente omnis laboriosam accusantium dolorem mollitia
+                  architecto fugiat quas adipisci nam fuga quam maiores?
+                </p>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="my-12 text-center w-full text-pink-800"
             >See them all &rarr;</a
           >
         </div>
