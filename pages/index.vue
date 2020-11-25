@@ -110,13 +110,10 @@
         </div>
       </div>
     </div>
-    <div class="bg-gray-100 min-h-screen">
+    <div class="bg-pink-200 min-h-screen">
       <div class="container mx-auto relative">
-        <span
-          class="hidden md:block absolute h-64 w-64 bg-gradient-to-t from-pink-800 to-pink-900 top-0 mt-12 ml-20 rounded-full z-0 shadow-lg"
-        ></span>
         <h1
-          class="text-center md:text-left absolute w-full pt-16 font-project text-6xl text-pink-400 z-10"
+          class="text-center md:text-left absolute w-full pt-16 font-project text-6xl text-pink-800 z-10"
         >
           PROJECTS
         </h1>
@@ -124,17 +121,17 @@
           <div
             v-for="index in [1, 2, 3]"
             :key="index"
-            class="w-full md:w-1/2 p-4"
+            class="w-full md:w-1/3 p-4"
           >
             <div
-              class="bg-gradient-to-b from-gray-300 to-gray-400 rounded-xl shadow-sm"
+              class="bg-gradient-to-b from-pink-300 via-pink-100 to-pink-200 rounded-xl"
             >
               <div
-                class="bg-cover bg-center w-full h-64 rounded-xl transform scale-100 md:scale-105 shadow-lg"
-                style="background-image: url(samples/image2.jpg)"
+                class="bg-clip-content bg-inner-rounded-custom bg-center w-full h-64 p-4"
+                style="background-image: url('samples/image2.jpg')"
               ></div>
-              <div class="p-4">
-                <p class="font-sans text-sm font-bold text-gray-700">
+              <div class="pb-4 px-4">
+                <p class="font-sans text-sm font-bold text-pink-700">
                   Yesterday &bull; #fun #fancy
                 </p>
                 <h2
