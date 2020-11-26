@@ -155,57 +155,61 @@
       </div>
     </div>
 
-    <div class="bg-gray-200 min-h-screen">
+    <div class="bg-gray-200">
       <div class="container mx-auto relative">
         <h1
           class="text-center md:text-left absolute w-full pt-16 px-4 font-blog text-6xl text-gray-900"
         >
-          NAH
+          BLOG
         </h1>
         <div class="relative flex flex-wrap pt-48">
-          <div
-            v-for="index in [1, 2, 3]"
-            :key="index"
-            class="w-full md:w-1/3 p-4"
-          >
-            <div class="rounded-xl">
-              <div
-                class="bg-content bg-inner-rounded-custom bg-center w-full h-64"
-                style="background-image: url('samples/image2.jpg')"
-              ></div>
-              <div class="py-4">
-                <p class="font-sans text-sm font-bold text-indigo-500">
-                  Yesterday &bull; #fun #fancy
-                </p>
-                <h2 class="font-sans pt-2 text-2xl font-bold text-gray-800">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit
-                </h2>
-                <p class="font-sans text-gray-700">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Commodi nulla minima consequuntur temporibus, aliquid delectus
-                  vitae sapiente omnis laboriosam accusantium dolorem mollitia
-                  architecto fugiat quas adipisci nam fuga quam maiores?
-                </p>
+          <div class="w-2/3 flex flex-wrap">
+            <div
+              v-for="index in [1, 2]"
+              :key="index"
+              class="w-full md:w-1/2 p-4"
+            >
+              <div class="rounded-xl">
+                <div
+                  class="bg-content bg-inner-rounded-custom bg-center w-full h-64"
+                  style="background-image: url('samples/image2.jpg')"
+                ></div>
+                <div class="py-4">
+                  <p class="font-sans text-sm font-bold text-indigo-500">
+                    Yesterday &bull; #fun #fancy
+                  </p>
+                  <h2 class="font-sans pt-2 text-2xl font-bold text-gray-800">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit
+                  </h2>
+                  <p class="font-sans text-gray-700">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Commodi nulla minima consequuntur temporibus, aliquid
+                    delectus vitae sapiente omnis laboriosam accusantium dolorem
+                    mollitia architecto fugiat quas adipisci nam fuga quam
+                    maiores?
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <a href="#" class="my-12 text-center w-full text-indigo-500"
-            >See them all &rarr;</a
-          >
+          <div class="w-1/3">
+            <ul>
+              <li><a href="#">Older posts</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-
-    <div class="bg-gray-200 min-h-screen">
+    <div class="bg-gray-200">
       <div class="container mx-auto relative">
         <h1
           class="text-center md:text-left absolute w-full pt-16 px-4 font-blog text-6xl text-gray-900"
         >
-          MAH
+          BOOKS
         </h1>
         <div class="relative flex flex-wrap pt-48">
           <div
-            v-for="index in [1, 2, 3, 4, 5, 6]"
+            v-for="index in [1, 2, 3, 4, 5, 6, 7]"
             :key="index"
             class="w-full md:w-1/6 p-4"
           >
@@ -223,16 +227,64 @@
                 </h2>
                 <p class="font-sans text-gray-700">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Commodi nulla minima consequuntur temporibus, aliquid delectus
-                  vitae sapiente omnis laboriosam accusantium dolorem mollitia
-                  architecto fugiat quas adipisci nam fuga quam maiores?
                 </p>
               </div>
             </div>
           </div>
-          <a href="#" class="my-12 text-center w-full text-indigo-500"
-            >See them all &rarr;</a
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-200">
+      <div class="container mx-auto relative">
+        <div class="py-8 px-4">
+          <h1
+            class="text-center md:text-left w-full font-blog text-6xl text-gray-900"
           >
+            ABOUT
+          </h1>
+          <p>A short description of myself here</p>
+        </div>
+        <h2 class="font-photo text-5xl text-gray-700 px-4">2020</h2>
+        <div class="flex flex-wrap">
+          <div
+            v-for="index in [1, 2, 3]"
+            :key="index"
+            class="w-full md:w-1/2 p-4"
+          >
+            <div class="flex flex-wrap rounded-xl shadow-lg">
+              <div
+                class="bg-content bg-inner-rounded-custom bg-center h-20 w-20"
+                style="background-image: url('samples/image2.jpg')"
+              ></div>
+              <div class="w-1/2 px-4">
+                <h2 class="font-sans text-2xl font-bold text-gray-800">
+                  A project title
+                </h2>
+                <p class="font-sans text-gray-700">Lorem ipsum .</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="font-photo text-5xl text-gray-700 px-4">2019</h2>
+        <div class="flex flex-wrap">
+          <div
+            v-for="index in [1, 2, 3]"
+            :key="index"
+            class="w-full md:w-1/2 p-4"
+          >
+            <div class="flex flex-wrap rounded-xl shadow-lg">
+              <div
+                class="bg-content bg-inner-rounded-custom bg-center h-20 w-20"
+                style="background-image: url('samples/image2.jpg')"
+              ></div>
+              <div class="w-1/2 px-4">
+                <h2 class="font-sans text-2xl font-bold text-gray-800">
+                  A project title
+                </h2>
+                <p class="font-sans text-gray-700">Lorem ipsum .</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
