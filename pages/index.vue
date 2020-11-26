@@ -154,6 +154,88 @@
         </div>
       </div>
     </div>
+
+    <div class="bg-gray-200 min-h-screen">
+      <div class="container mx-auto relative">
+        <h1
+          class="text-center md:text-left absolute w-full pt-16 px-4 font-blog text-6xl text-gray-900"
+        >
+          NAH
+        </h1>
+        <div class="relative flex flex-wrap pt-48">
+          <div
+            v-for="index in [1, 2, 3]"
+            :key="index"
+            class="w-full md:w-1/3 p-4"
+          >
+            <div class="rounded-xl">
+              <div
+                class="bg-content bg-inner-rounded-custom bg-center w-full h-64"
+                style="background-image: url('samples/image2.jpg')"
+              ></div>
+              <div class="py-4">
+                <p class="font-sans text-sm font-bold text-indigo-500">
+                  Yesterday &bull; #fun #fancy
+                </p>
+                <h2 class="font-sans pt-2 text-2xl font-bold text-gray-800">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit
+                </h2>
+                <p class="font-sans text-gray-700">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Commodi nulla minima consequuntur temporibus, aliquid delectus
+                  vitae sapiente omnis laboriosam accusantium dolorem mollitia
+                  architecto fugiat quas adipisci nam fuga quam maiores?
+                </p>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="my-12 text-center w-full text-indigo-500"
+            >See them all &rarr;</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-gray-200 min-h-screen">
+      <div class="container mx-auto relative">
+        <h1
+          class="text-center md:text-left absolute w-full pt-16 px-4 font-blog text-6xl text-gray-900"
+        >
+          MAH
+        </h1>
+        <div class="relative flex flex-wrap pt-48">
+          <div
+            v-for="index in [1, 2, 3, 4, 5, 6]"
+            :key="index"
+            class="w-full md:w-1/6 p-4"
+          >
+            <div class="rounded-xl">
+              <div
+                class="bg-content bg-inner-rounded-custom bg-center w-full h-64"
+                style="background-image: url('samples/image2.jpg')"
+              ></div>
+              <div class="py-4">
+                <p class="font-sans text-sm font-bold text-indigo-500">
+                  Yesterday &bull; #book
+                </p>
+                <h2 class="font-sans pt-2 text-2xl font-bold text-gray-800">
+                  Book Title
+                </h2>
+                <p class="font-sans text-gray-700">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Commodi nulla minima consequuntur temporibus, aliquid delectus
+                  vitae sapiente omnis laboriosam accusantium dolorem mollitia
+                  architecto fugiat quas adipisci nam fuga quam maiores?
+                </p>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="my-12 text-center w-full text-indigo-500"
+            >See them all &rarr;</a
+          >
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
