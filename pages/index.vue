@@ -281,7 +281,7 @@
                 <h2 class="font-sans text-2xl font-bold text-gray-800">
                   A project title
                 </h2>
-                <p class="font-sans text-gray-700">Lorem ipsum .</p>
+                <p class="font-sans text-gray-700">Lorem ipsum.</p>
               </div>
             </div>
           </div>
