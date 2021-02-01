@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav
-      class="container px-8 sm:px-0 mx-auto flex justify-evenly flex-col sm:flex-row py-8 border-b border-gray-300 text-gray-800 uppercase font-bold text-sm"
+      class="container px-8 sm:px-0 mx-auto flex justify-evenly flex-col sm:flex-row py-8 border-b border-gray-300 text-gray-700 uppercase font-bold text-sm"
     >
       <a class="" href="#">Amirmasoud Sheydaei</a>
       <span class="hidden sm:inline text-gray-200">|</span>
@@ -11,6 +11,24 @@
       <a class="" href="#">Arts</a>
       <a class="" href="#">About</a>
     </nav>
+    <section id="blog" class="container mx-auto my-16 px-4 sm:px-16">
+      <h1 class="text-gray-900 font-bold text-3xl">Blog</h1>
+      <span class="text-blue-500">______</span>
+      <ul class="mt-16">
+        <li class="capitalize mb-16">
+          A sample post <span class="text-gray-900">&rarr;</span>
+        </li>
+        <li class="capitalize mb-16">
+          A sample post <span class="text-gray-900">&rarr;</span>
+        </li>
+        <li class="capitalize mb-16">
+          A sample post <span class="text-gray-900">&rarr;</span>
+        </li>
+        <li class="capitalize mb-16">
+          A sample post <span class="text-gray-900">&rarr;</span>
+        </li>
+      </ul>
+    </section>
     <div class="bg-gray-900 min-h-screen mt-8">
       <div class="container mx-auto relative">
         <span
