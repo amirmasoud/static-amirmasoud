@@ -1,68 +1,17 @@
 <template>
   <div>
-    <div class="flex flex-wrap">
-      <div
-        class="transition duration-500 ease-in-out w-1/5 p-4 h-screen transform hover:scale-95 bg-gradient-to-r from-blue-500 to-blue-600 flex flex-col text-center justify-center items-center"
-      >
-        <h1
-          class="font-blog text-3xl md:text-6xl text-blue-900 transform rotate-90 md:rotate-0"
-        >
-          BLOG
-        </h1>
-        <p class="hidden md:block w-full pt-4 text-sm italic text-blue-900">
-          Long toturials, short tips and tiny discoveries.
-        </p>
-      </div>
-      <div
-        class="transition duration-500 ease-in-out w-1/5 p-4 h-screen transform hover:scale-95 bg-gradient-to-r from-pink-500 to-pink-600 flex flex-col text-center justify-center items-center"
-      >
-        <h1
-          class="font-project text-3xl md:text-6xl text-pink-900 transform rotate-90 md:rotate-0"
-        >
-          PROJECTS
-        </h1>
-        <p class="hidden md:block w-full pt-4 text-sm italic text-pink-900">
-          A list of some of the projects I was part of in the past years.
-        </p>
-      </div>
-      <div
-        class="transition duration-500 ease-in-out w-1/5 p-4 h-screen transform hover:scale-95 bg-gradient-to-r from-green-500 to-green-600 flex flex-col text-center justify-center items-center"
-      >
-        <h1
-          class="font-about text-3xl md:text-6xl text-green-900 transform rotate-90 md:rotate-0"
-        >
-          ABOUT
-        </h1>
-        <p class="hidden md:block w-full pt-4 text-sm italic text-green-900">
-          A very description on my passions and interests if you would care.
-        </p>
-      </div>
-      <div
-        class="transition duration-500 ease-in-out w-1/5 p-4 h-screen transform hover:scale-95 bg-gradient-to-r from-indigo-500 to-indigo-600 flex flex-col text-center justify-center items-center"
-      >
-        <h1
-          class="font-photo text-3xl md:text-6xl text-indigo-900 transform rotate-90 md:rotate-0"
-        >
-          BOOKS
-        </h1>
-        <p class="hidden md:block w-full pt-4 text-sm italic text-indigo-900">
-          I enjoy reading books, here is a some of them.
-        </p>
-      </div>
-      <div
-        class="transition duration-500 ease-in-out w-1/5 p-4 h-screen transform hover:scale-95 bg-gradient-to-r from-purple-500 to-purple-600 flex flex-col text-center justify-center items-center"
-      >
-        <h1
-          class="font-drawing text-3xl md:text-6xl text-purple-900 transform rotate-90 md:rotate-0"
-        >
-          ARTS
-        </h1>
-        <p class="hidden md:block w-full pt-4 text-sm italic text-purple-900">
-          I like to artist, but I'm not, but I'm trying, here's the results.
-        </p>
-      </div>
-    </div>
-    <div class="bg-gray-900 min-h-screen">
+    <nav
+      class="container px-8 sm:px-0 mx-auto flex justify-evenly flex-col sm:flex-row py-8 border-b border-gray-300 text-gray-800 uppercase font-bold text-sm"
+    >
+      <a class="" href="#">Amirmasoud Sheydaei</a>
+      <span class="hidden sm:inline text-gray-200">|</span>
+      <a class="" href="#">Blog</a>
+      <a class="" href="#">Project</a>
+      <a class="" href="#">Books</a>
+      <a class="" href="#">Arts</a>
+      <a class="" href="#">About</a>
+    </nav>
+    <div class="bg-gray-900 min-h-screen mt-8">
       <div class="container mx-auto relative">
         <span
           class="hidden md:block absolute h-64 w-64 bg-gradient-to-t from-blue-800 to-gray-900 top-0 mt-12 ml-20 rounded-full z-0 shadow-lg"
