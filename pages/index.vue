@@ -10,7 +10,7 @@
           BLOG
         </h1>
         <p class="hidden md:block w-full pt-4 text-sm italic text-blue-900">
-          Wants to read some badly read articles?
+          Long toturials, short tips and tiny discoveries.
         </p>
       </div>
       <div
@@ -22,7 +22,7 @@
           PROJECTS
         </h1>
         <p class="hidden md:block w-full pt-4 text-sm italic text-pink-900">
-          Wants to see some badly implemented projects?
+          A list of some of the projects I was part of in the past years.
         </p>
       </div>
       <div
@@ -34,7 +34,7 @@
           ABOUT
         </h1>
         <p class="hidden md:block w-full pt-4 text-sm italic text-green-900">
-          Who the f*?
+          A very description on my passions and interests if you would care.
         </p>
       </div>
       <div
@@ -46,7 +46,7 @@
           BOOKS
         </h1>
         <p class="hidden md:block w-full pt-4 text-sm italic text-indigo-900">
-          Some badly read books by this guy
+          I enjoy reading books, here is a some of them.
         </p>
       </div>
       <div
@@ -58,8 +58,7 @@
           ARTS
         </h1>
         <p class="hidden md:block w-full pt-4 text-sm italic text-purple-900">
-          Some terribly drawn photos by a guy who thinks can be artist withing a
-          day, yay! plus some extra some serious, genuine amature photos
+          I like to artist, but I'm not, but I'm trying, here's the results.
         </p>
       </div>
     </div>
