@@ -140,6 +140,46 @@
             dolorum, hic nobis nihil.
           </p>
         </div>
+
+        <div class="">
+          <img
+            class="rounded-lg shadow-lg mb-4"
+            src="http://amirmasoud.me/wp-content/uploads/2020/06/x43190966._SX318_.jpg.pagespeed.ic.-8klxNR3cy.webp"
+          />
+          <div class="mb-8">
+            <span
+              class="px-2 py-1 rounded-md text-xs uppercase bg-gray-100 text-gray-400 border-gray-100 hover:bg-blue-100 hover:text-blue-400 hover:border-blue-100 shadow-xs border"
+              >web</span
+            >
+          </div>
+          <h2 class="font-bold text-base">A sample book</h2>
+          <p class="text-gray-500 mt-4">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, modi
+            asperiores. Quos id aspernatur nesciunt dolorum voluptas? Deleniti
+            enim unde quas impedit aspernatur consequatur quis quibusdam
+            dolorum, hic nobis nihil.
+          </p>
+        </div>
+
+        <div class="">
+          <img
+            class="rounded-lg shadow-lg mb-4"
+            src="http://amirmasoud.me/wp-content/uploads/2020/06/x43190966._SX318_.jpg.pagespeed.ic.-8klxNR3cy.webp"
+          />
+          <div class="mb-8">
+            <span
+              class="px-2 py-1 rounded-md text-xs uppercase bg-gray-100 text-gray-400 border-gray-100 hover:bg-blue-100 hover:text-blue-400 hover:border-blue-100 shadow-xs border"
+              >web</span
+            >
+          </div>
+          <h2 class="font-bold text-base">A sample book</h2>
+          <p class="text-gray-500 mt-4">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, modi
+            asperiores. Quos id aspernatur nesciunt dolorum voluptas? Deleniti
+            enim unde quas impedit aspernatur consequatur quis quibusdam
+            dolorum, hic nobis nihil.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -149,82 +189,14 @@
         <span class="text-blue-500">______</span>
       </div>
       <div class="magic-grid mx-auto mb-64 mt-16">
-        <div class="flex justify-center items-center w-64">
+        <div
+          v-for="(img, idx) in Array(32)"
+          :key="idx"
+          class="flex justify-center items-center w-64"
+        >
           <img
             class="rounded-md shadow-md"
-            src="https://source.unsplash.com/random/1"
-          />
-        </div>
-        <div class="flex justify-center items-center w-64">
-          <img
-            class="rounded-md shadow-md"
-            src="https://source.unsplash.com/random/2"
-          />
-        </div>
-        <div class="flex justify-center items-center w-64">
-          <img
-            class="rounded-md shadow-md"
-            src="https://source.unsplash.com/random/3"
-          />
-        </div>
-        <div class="flex justify-center items-center w-64">
-          <img
-            class="rounded-md shadow-md"
-            src="https://source.unsplash.com/random/4"
-          />
-        </div>
-        <div class="flex justify-center items-center w-64">
-          <img
-            class="rounded-md shadow-md"
-            src="https://source.unsplash.com/random/5"
-          />
-        </div>
-        <div class="flex justify-center items-center w-64">
-          <img
-            class="rounded-md shadow-md"
-            src="https://source.unsplash.com/random/6"
-          />
-        </div>
-        <div class="flex justify-center items-center w-64">
-          <img
-            class="rounded-md shadow-md"
-            src="https://source.unsplash.com/random/7"
-          />
-        </div>
-        <div class="flex justify-center items-center w-64">
-          <img
-            class="rounded-md shadow-md"
-            src="https://source.unsplash.com/random/8"
-          />
-        </div>
-        <div class="flex justify-center items-center w-64">
-          <img
-            class="rounded-md shadow-md"
-            src="https://source.unsplash.com/random/9"
-          />
-        </div>
-        <div class="flex justify-center items-center w-64">
-          <img
-            class="rounded-md shadow-md"
-            src="https://source.unsplash.com/random/10"
-          />
-        </div>
-        <div class="flex justify-center items-center w-64">
-          <img
-            class="rounded-md shadow-md"
-            src="https://source.unsplash.com/random/11"
-          />
-        </div>
-        <div class="flex justify-center items-center w-64">
-          <img
-            class="rounded-md shadow-md"
-            src="https://source.unsplash.com/random/12"
-          />
-        </div>
-        <div class="flex justify-center items-center w-64">
-          <img
-            class="rounded-md shadow-md"
-            src="https://source.unsplash.com/random/13"
+            :src="`https://source.unsplash.com/random/${idx + 1}`"
           />
         </div>
       </div>
@@ -247,8 +219,8 @@ export default {
       this.magicGrid = new MagicGrid({
         container: '.magic-grid',
         animate: true,
-        gutter: 100 / 5,
-        items: 13,
+        gutter: 20,
+        items: 32,
         useMin: true,
         maxColumns: 6,
       })
