@@ -29,6 +29,110 @@
         </li>
       </ul>
     </section>
+
+    <section id="projects" class="container mx-auto my-64 px-4 sm:px-16">
+      <h1 class="text-gray-900 font-bold text-3xl">Projects</h1>
+      <span class="text-blue-500">______</span>
+      <ul class="mt-16">
+        <li class="uppercase mb-16">
+          <h2 class="font-bold text-sm">A sample post</h2>
+          <span class="block text-gray-600 font-bold text-xs">2018 - 2020</span>
+          <p class="text-gray-900 mt-4">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, modi
+            asperiores. Quos id aspernatur nesciunt dolorum voluptas? Deleniti
+            enim unde quas impedit aspernatur consequatur quis quibusdam
+            dolorum, hic nobis nihil.
+          </p>
+        </li>
+        <li class="uppercase mb-16">
+          <h2 class="font-bold text-sm">A sample post</h2>
+          <span class="block text-gray-600 font-bold text-xs">2018 - 2020</span>
+          <p class="text-gray-900 mt-4">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, modi
+            asperiores. Quos id aspernatur nesciunt dolorum voluptas? Deleniti
+            enim unde quas impedit aspernatur consequatur quis quibusdam
+            dolorum, hic nobis nihil.
+          </p>
+        </li>
+        <li class="uppercase mb-16">
+          <h2 class="font-bold text-sm">A sample post</h2>
+          <span class="block text-gray-600 font-bold text-xs">2018 - 2020</span>
+          <p class="text-gray-900 mt-4">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, modi
+            asperiores. Quos id aspernatur nesciunt dolorum voluptas? Deleniti
+            enim unde quas impedit aspernatur consequatur quis quibusdam
+            dolorum, hic nobis nihil.
+          </p>
+        </li>
+        <li class="uppercase mb-16">
+          <h2 class="font-bold text-sm">A sample post</h2>
+          <span class="block text-gray-600 font-bold text-xs">2018 - 2020</span>
+          <p class="text-gray-900 mt-4">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, modi
+            asperiores. Quos id aspernatur nesciunt dolorum voluptas? Deleniti
+            enim unde quas impedit aspernatur consequatur quis quibusdam
+            dolorum, hic nobis nihil.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="books" class="container mx-auto my-64 px-4 sm:px-16">
+      <h1 class="text-gray-900 font-bold text-3xl">Books</h1>
+      <span class="text-blue-500">______</span>
+      <div class="my-16 flex flex-wrap">
+        <div class="uppercase w-1/5">
+          <h2 class="font-bold text-sm">A sample book</h2>
+          <p class="text-gray-900 mt-4">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, modi
+            asperiores. Quos id aspernatur nesciunt dolorum voluptas? Deleniti
+            enim unde quas impedit aspernatur consequatur quis quibusdam
+            dolorum, hic nobis nihil.
+          </p>
+        </div>
+
+        <div class="uppercase w-1/5">
+          <h2 class="font-bold text-sm">A sample book</h2>
+          <p class="text-gray-900 mt-4">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, modi
+            asperiores. Quos id aspernatur nesciunt dolorum voluptas? Deleniti
+            enim unde quas impedit aspernatur consequatur quis quibusdam
+            dolorum, hic nobis nihil.
+          </p>
+        </div>
+
+        <div class="uppercase w-1/5">
+          <h2 class="font-bold text-sm">A sample book</h2>
+          <p class="text-gray-900 mt-4">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, modi
+            asperiores. Quos id aspernatur nesciunt dolorum voluptas? Deleniti
+            enim unde quas impedit aspernatur consequatur quis quibusdam
+            dolorum, hic nobis nihil.
+          </p>
+        </div>
+
+        <div class="uppercase w-1/5">
+          <h2 class="font-bold text-sm">A sample book</h2>
+          <p class="text-gray-900 mt-4">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, modi
+            asperiores. Quos id aspernatur nesciunt dolorum voluptas? Deleniti
+            enim unde quas impedit aspernatur consequatur quis quibusdam
+            dolorum, hic nobis nihil.
+          </p>
+        </div>
+
+        <div class="uppercase w-1/5">
+          <h2 class="font-bold text-sm">A sample book</h2>
+          <p class="text-gray-900 mt-4">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, modi
+            asperiores. Quos id aspernatur nesciunt dolorum voluptas? Deleniti
+            enim unde quas impedit aspernatur consequatur quis quibusdam
+            dolorum, hic nobis nihil.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <div class="bg-gray-900 min-h-screen mt-8">
       <div class="container mx-auto relative">
         <span
