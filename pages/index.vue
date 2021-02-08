@@ -190,7 +190,7 @@
       </div>
       <div class="magic-grid mx-auto mb-64 mt-16">
         <div
-          v-for="(img, idx) in Array(32)"
+          v-for="(img, idx) in Array(1)"
           :key="idx"
           class="flex justify-center items-center w-64"
         >
@@ -205,18 +205,169 @@
     <section id="about" class="container mx-auto my-16 px-4 sm:px-16">
       <h1 class="text-gray-900 font-bold text-3xl">About</h1>
       <span class="text-blue-500">______</span>
-      <ul class="mt-16">
-        <li class="capitalize mb-16">
-          A sample post <span class="text-gray-900">&rarr;</span>
+
+      <ul class="rounded-3xl">
+        <li>
+          <article>
+            <a
+              href="#"
+              class="grid md:grid-cols-8 xl:grid-cols-9 items-start relative rounded-xl p-3 sm:p-5 xl:p-6 overflow-hidden hover:bg-white"
+              ><h3
+                class="font-semibold text-gray-900 md:col-start-3 md:col-span-6 xl:col-start-3 xl:col-span-7 mb-1 ml-9 md:ml-0"
+              >
+                ...
+              </h3>
+              <time
+                datetime="2020-11-18T17:45:00.000Z"
+                class="md:col-start-1 md:col-span-2 row-start-1 md:row-end-3 flex items-center font-medium mb-1 md:mb-0"
+                ><svg
+                  viewBox="0 0 12 12"
+                  class="w-3 h-3 mr-6 overflow-visible text-green-400"
+                >
+                  <circle cx="6" cy="6" r="6" fill="currentColor"></circle>
+                  <circle
+                    cx="6"
+                    cy="6"
+                    r="11"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  ></circle>
+                  <path
+                    d="M 6 18 V 500"
+                    fill="none"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    class="text-gray-200"
+                  ></path></svg
+                >2021</time
+              >
+              <p
+                class="md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0"
+              >
+                ...
+              </p></a
+            >
+          </article>
         </li>
-        <li class="capitalize mb-16">
-          A sample post <span class="text-gray-900">&rarr;</span>
+        <li>
+          <article>
+            <a
+              href="#"
+              class="grid md:grid-cols-8 xl:grid-cols-9 items-start relative rounded-xl p-3 sm:p-5 xl:p-6 overflow-hidden hover:bg-white"
+              ><h3
+                class="font-semibold text-gray-900 md:col-start-3 md:col-span-6 xl:col-start-3 xl:col-span-7 mb-1 ml-9 md:ml-0"
+              >
+                ...
+              </h3>
+              <time
+                datetime="2020-10-13T18:30:00.000Z"
+                class="md:col-start-1 md:col-span-2 row-start-1 md:row-end-3 flex items-center font-medium mb-1 md:mb-0"
+                ><svg
+                  viewBox="0 0 12 12"
+                  class="w-3 h-3 mr-6 overflow-visible text-gray-300"
+                >
+                  <circle cx="6" cy="6" r="6" fill="currentColor"></circle>
+                  <path
+                    d="M 6 -6 V -30"
+                    fill="none"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    class="text-gray-200"
+                  ></path>
+                  <path
+                    d="M 6 18 V 500"
+                    fill="none"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    class="text-gray-200"
+                  ></path></svg
+                >2020</time
+              >
+              <p
+                class="md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0"
+              >
+                ...
+              </p>
+            </a>
+          </article>
         </li>
-        <li class="capitalize mb-16">
-          A sample post <span class="text-gray-900">&rarr;</span>
+        <li>
+          <article>
+            <a
+              href="#"
+              class="grid md:grid-cols-8 xl:grid-cols-9 items-start relative rounded-xl p-3 sm:p-5 xl:p-6 overflow-hidden hover:bg-white"
+              ><h3
+                class="font-semibold text-gray-900 md:col-start-3 md:col-span-6 xl:col-start-3 xl:col-span-7 mb-1 ml-9 md:ml-0"
+              >
+                ...
+              </h3>
+              <time
+                datetime="2020-10-07T13:00:00.000Z"
+                class="md:col-start-1 md:col-span-2 row-start-1 md:row-end-3 flex items-center font-medium mb-1 md:mb-0"
+                ><svg
+                  viewBox="0 0 12 12"
+                  class="w-3 h-3 mr-6 overflow-visible text-gray-300"
+                >
+                  <circle cx="6" cy="6" r="6" fill="currentColor"></circle>
+                  <path
+                    d="M 6 -6 V -30"
+                    fill="none"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    class="text-gray-200"
+                  ></path>
+                  <path
+                    d="M 6 18 V 500"
+                    fill="none"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    class="text-gray-200"
+                  ></path></svg
+                >2020</time
+              >
+              <p
+                class="md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0"
+              >
+                ...
+              </p></a
+            >
+          </article>
         </li>
-        <li class="capitalize mb-16">
-          A sample post <span class="text-gray-900">&rarr;</span>
+        <li>
+          <article>
+            <a
+              href="#"
+              class="grid md:grid-cols-8 xl:grid-cols-9 items-start relative rounded-xl p-3 sm:p-5 xl:p-6 overflow-hidden hover:bg-white"
+              ><h3
+                class="font-semibold text-gray-900 md:col-start-3 md:col-span-6 xl:col-start-3 xl:col-span-7 mb-1 ml-9 md:ml-0"
+              >
+                ...
+              </h3>
+              <time
+                datetime="2020-10-06T18:30:00.000Z"
+                class="md:col-start-1 md:col-span-2 row-start-1 md:row-end-3 flex items-center font-medium mb-1 md:mb-0"
+                ><svg
+                  viewBox="0 0 12 12"
+                  class="w-3 h-3 mr-6 overflow-visible text-gray-300"
+                >
+                  <circle cx="6" cy="6" r="6" fill="currentColor"></circle>
+                  <path
+                    d="M 6 -6 V -30"
+                    fill="none"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    class="text-gray-200"
+                  ></path></svg
+                >2020</time
+              >
+              <p
+                class="md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0"
+              >
+                ...
+              </p></a
+            >
+          </article>
         </li>
       </ul>
     </section>
@@ -239,7 +390,7 @@ export default {
         container: '.magic-grid',
         animate: true,
         gutter: 20,
-        items: 32,
+        items: 1,
         useMin: true,
         maxColumns: 6,
       })
