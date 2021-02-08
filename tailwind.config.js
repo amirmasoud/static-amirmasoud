@@ -5,6 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        heading: ['Antic Didone', ...defaultTheme.fontFamily.sans],
         sans: ['Noto Sans', ...defaultTheme.fontFamily.sans],
         blog: ['Bangers', 'cursive'],
         photo: ['Bungee Shade', 'cursive'],
