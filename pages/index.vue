@@ -421,7 +421,7 @@
       <span class="text-blue-500">______</span>
 
       <div class="flex justify-center space-x-12 mt-16">
-        <a href="#">
+        <a href="https://github.com/amirmasoud">
           <svg fill="currentColor" class="flex-none text-gray-900 w-12 h-12">
             <rect width="48" height="48" rx="12"></rect>
             <path
@@ -432,7 +432,7 @@
           </svg>
         </a>
 
-        <a href="#">
+        <a href="https://twitter.com/AmirmasoudShey1">
           <svg fill="currentColor" class="flex-none text-blue-400 w-12 h-12">
             <rect width="48" height="48" rx="12"></rect>
             <path
