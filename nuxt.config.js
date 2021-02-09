@@ -40,6 +40,8 @@ export default {
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    // https://color-mode.nuxtjs.org
+    '@nuxtjs/color-mode',
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
@@ -50,4 +52,9 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
+
+  // Configure Tailwind v2 with @nuxtjs/color-mode (https://color-mode.nuxtjs.org/#tailwind-v2)
+  colorMode: {
+    classSuffix: '',
+  },
 }

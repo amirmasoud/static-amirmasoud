@@ -18,13 +18,14 @@
   "dependencies": {
     "@nuxt/content": "^1.9.0",
     "@nuxtjs/axios": "^5.12.2",
-    "@nuxtjs/pwa": "^3.0.2",
+    "@nuxtjs/pwa": "^3.3.5",
     "@tailwindcss/typography": "^0.4.0",
     "core-js": "^3.6.5",
     "magic-grid": "^3.2.4",
     "nuxt": "^2.14.6"
   },
   "devDependencies": {
+    "@nuxtjs/color-mode": "^2.0.3",
     "@nuxtjs/eslint-config": "^3.1.0",
     "@nuxtjs/eslint-module": "^2.0.0",
     "@nuxtjs/stylelint-module": "^4.0.0",
