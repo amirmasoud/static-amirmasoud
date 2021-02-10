@@ -75,7 +75,7 @@
       </ul>
     </section>
 
-    <section id="about" class="container mx-auto my-64 px-4 sm:px-16">
+    <section id="about" class="container mx-auto mt-64 px-4 sm:px-16">
       <h1 class="text-gray-900 font-bold text-3xl">About</h1>
       <span class="text-blue-500">______</span>
 
@@ -484,7 +484,7 @@
       </ul>
     </section>
 
-    <section id="projects" class="container mx-auto my-64 px-4 sm:px-16">
+    <section id="projects" class="container mx-auto mt-64 px-4 sm:px-16">
       <h1 class="text-gray-900 font-bold text-3xl">Projects</h1>
       <span class="text-blue-500">______</span>
       <ul class="mt-16">
@@ -541,10 +541,7 @@
             src="http://amirmasoud.me/wp-content/uploads/2020/06/x43190966._SX318_.jpg.pagespeed.ic.-8klxNR3cy.webp"
           />
           <div class="mb-8">
-            <span
-              class="px-2 py-1 rounded-md text-xs uppercase bg-gray-100 text-gray-400 border-gray-100 hover:bg-blue-100 hover:text-blue-400 hover:border-blue-100 shadow-xs border"
-              >web</span
-            >
+            <badge>WEB</badge>
           </div>
           <h2 class="font-bold text-base">A sample book</h2>
           <p class="text-gray-500 mt-4">
