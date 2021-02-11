@@ -1,6 +1,7 @@
 ---
 title: Hello World
 description: A short description about this blog post.
+tags: Tag 1, Tag2
 ---
 
 <p className="lead">

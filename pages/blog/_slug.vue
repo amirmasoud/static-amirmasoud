@@ -7,6 +7,7 @@
       <span class="text-blue-500">______</span>
     </div>
     <article class="prose lg:prose-xl mx-auto">
+      Tags: {{ page.tags }}
       <nuxt-content :document="page" />
     </article>
   </section>
