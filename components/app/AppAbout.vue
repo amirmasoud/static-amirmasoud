@@ -403,7 +403,23 @@
             </div>
           </div>
         </article>
+        {{ articles }}
       </li>
     </ul>
   </section>
 </template>
+
+<script>
+export default {
+  async asyncData({ $content }) {
+    const articles = await $content('about').limit(5).fetch()
+
+    return {
+      articles,
+    }
+  },
+  data() {
+    return { articles: [] }
+  },
+}
+</script>
