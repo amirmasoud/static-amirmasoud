@@ -6,7 +6,7 @@
 
     <app-about :content="about" />
 
-    <app-projects />
+    <app-projects :content="projects" />
 
     <app-books />
 
@@ -20,9 +20,11 @@
 export default {
   async asyncData({ $content }) {
     const about = await $content('about').fetch()
+    const projects = await $content('projects').fetch()
 
     return {
       about,
+      projects,
     }
   },
 }
