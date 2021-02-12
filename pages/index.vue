@@ -4,7 +4,7 @@
 
     <app-blog />
 
-    <app-about />
+    <app-about :content="about" />
 
     <app-projects />
 
@@ -15,3 +15,15 @@
     <app-connect />
   </div>
 </template>
+
+<script>
+export default {
+  async asyncData({ $content }) {
+    const about = await $content('about').fetch()
+
+    return {
+      about,
+    }
+  },
+}
+</script>

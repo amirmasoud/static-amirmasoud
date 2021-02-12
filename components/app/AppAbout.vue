@@ -324,7 +324,7 @@
           </div>
         </article>
       </li>
-      <li>
+      <li v-for="(c, idx) in content" :key="c.slug">
         <article>
           <div
             class="grid md:grid-cols-8 xl:grid-cols-9 items-start relative p-3 sm:p-5 xl:p-6 overflow-hidden"
@@ -332,12 +332,53 @@
             <h3
               class="font-semibold text-gray-900 md:col-start-3 md:col-span-6 xl:col-start-3 xl:col-span-7 mb-1 ml-9 md:ml-0"
             >
-              Intern WordPress Developer - Local Startup
+              {{ c.title }}
             </h3>
             <time
               datetime="2020-10-07T13:00:00.000Z"
               class="md:col-start-1 md:col-span-2 row-start-1 md:row-end-3 flex items-center font-medium mb-1 md:mb-0"
-              ><svg
+            >
+              <svg
+                v-if="idx == 0"
+                viewBox="0 0 12 12"
+                class="w-3 h-3 mr-6 overflow-visible text-green-400"
+              >
+                <circle cx="6" cy="6" r="6" fill="currentColor"></circle>
+                <circle
+                  cx="6"
+                  cy="6"
+                  r="11"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                ></circle>
+                <path
+                  v-if="content.length - 1"
+                  d="M 6 18 V 500"
+                  fill="none"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="text-gray-200"
+                ></path>
+              </svg>
+
+              <svg
+                v-else-if="idx == content.length - 1"
+                viewBox="0 0 12 12"
+                class="w-3 h-3 mr-6 overflow-visible text-gray-300"
+              >
+                <circle cx="6" cy="6" r="6" fill="currentColor"></circle>
+                <path
+                  d="M 6 -6 V -30"
+                  fill="none"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="text-gray-200"
+                ></path>
+              </svg>
+
+              <svg
+                v-else
                 viewBox="0 0 12 12"
                 class="w-3 h-3 mr-6 overflow-visible text-gray-300"
               >
@@ -356,54 +397,15 @@
                   stroke="currentColor"
                   class="text-gray-200"
                 ></path></svg
-              >Jul 2015 ― Sep 2015</time
+              >{{ c.from }} ― {{ c.to }}</time
             >
             <div
               class="md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0"
             >
-              <p>WordPress theme development</p>
+              <nuxt-content :document="c" />
             </div>
           </div>
         </article>
-      </li>
-      <li>
-        <article>
-          <div
-            class="grid md:grid-cols-8 xl:grid-cols-9 items-start relative p-3 sm:p-5 xl:p-6 overflow-hidden"
-          >
-            <h3
-              class="font-semibold text-gray-900 md:col-start-3 md:col-span-6 xl:col-start-3 xl:col-span-7 mb-1 ml-9 md:ml-0"
-            >
-              BSc, Computer Software Engineering - Kashan University
-            </h3>
-            <time
-              datetime="2020-10-06T18:30:00.000Z"
-              class="md:col-start-1 md:col-span-2 row-start-1 md:row-end-3 flex items-center font-medium mb-1 md:mb-0"
-              ><svg
-                viewBox="0 0 12 12"
-                class="w-3 h-3 mr-6 overflow-visible text-gray-300"
-              >
-                <circle cx="6" cy="6" r="6" fill="currentColor"></circle>
-                <path
-                  d="M 6 -6 V -30"
-                  fill="none"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  class="text-gray-200"
-                ></path></svg
-              >2011-2016</time
-            >
-            <div
-              class="md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0"
-            >
-              <p>
-                Final thesis on recommender systems and e-commerce using PHP
-              </p>
-              <p>GPA: 2.81 / 4</p>
-            </div>
-          </div>
-        </article>
-        {{ articles }}
       </li>
     </ul>
   </section>
@@ -411,15 +413,11 @@
 
 <script>
 export default {
-  async asyncData({ $content }) {
-    const articles = await $content('about').limit(5).fetch()
-
-    return {
-      articles,
-    }
-  },
-  data() {
-    return { articles: [] }
+  props: {
+    content: {
+      type: Array,
+      default: () => [],
+    },
   },
 }
 </script>
