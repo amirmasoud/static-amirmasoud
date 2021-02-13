@@ -8,7 +8,7 @@
 
     <app-projects :content="projects" />
 
-    <app-books />
+    <app-books :content="books" />
 
     <app-arts />
 
@@ -22,11 +22,13 @@ export default {
     const about = await $content('about').fetch()
     const projects = await $content('projects').fetch()
     const blog = await $content('blog').fetch()
+    const books = await $content('books').fetch()
 
     return {
       about,
       projects,
       blog,
+      books,
     }
   },
 }
