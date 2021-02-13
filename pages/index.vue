@@ -2,7 +2,7 @@
   <div class="bg-gray-50">
     <app-hello>Hello! My name is Amirmasood</app-hello>
 
-    <app-blog />
+    <app-blog :content="blog" />
 
     <app-about :content="about" />
 
@@ -21,10 +21,12 @@ export default {
   async asyncData({ $content }) {
     const about = await $content('about').fetch()
     const projects = await $content('projects').fetch()
+    const blog = await $content('blog').fetch()
 
     return {
       about,
       projects,
+      blog,
     }
   },
 }
