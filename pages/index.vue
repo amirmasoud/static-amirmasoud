@@ -10,9 +10,9 @@
 
     <app-books :content="books" />
 
-    <app-arts />
+    <app-arts :content="arts" />
 
-    <app-connect />
+    <app-connect :content="connects" />
   </div>
 </template>
 
@@ -23,12 +23,16 @@ export default {
     const projects = await $content('projects').fetch()
     const blog = await $content('blog').fetch()
     const books = await $content('books').fetch()
+    const arts = await $content('arts').fetch()
+    const connects = await $content('connects').fetch()
 
     return {
       about,
       projects,
       blog,
       books,
+      arts,
+      connects,
     }
   },
 }
