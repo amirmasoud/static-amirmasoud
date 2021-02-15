@@ -4,7 +4,7 @@
 
     <app-blog :content="blog" />
 
-    <app-about :content="about" />
+    <app-about :content="about" :welcome="aboutWelcome" />
 
     <app-projects :content="projects" />
 
@@ -26,6 +26,8 @@ export default {
     const arts = await $content('arts').fetch()
     const connects = await $content('connects').fetch()
 
+    const aboutWelcome = await $content('about-welcome').fetch()
+
     return {
       about,
       projects,
@@ -33,6 +35,7 @@ export default {
       books,
       arts,
       connects,
+      aboutWelcome,
     }
   },
 }

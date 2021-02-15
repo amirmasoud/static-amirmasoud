@@ -3,6 +3,8 @@
     <h1 class="text-gray-900 font-bold text-3xl">About</h1>
     <span class="text-blue-500">______</span>
 
+    <nuxt-content :document="welcome" class="about-welcome prose mt-16" />
+
     <ul class="rounded-3xl mt-20">
       <li v-for="(c, idx) in content" :key="c.slug">
         <article>
@@ -97,6 +99,10 @@ export default {
     content: {
       type: Array,
       default: () => [],
+    },
+    welcome: {
+      type: Object,
+      default: () => {},
     },
   },
 }
