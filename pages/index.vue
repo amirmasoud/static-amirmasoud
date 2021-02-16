@@ -1,6 +1,6 @@
 <template>
   <div class="bg-gray-50">
-    <app-hello>Hello! My name is Amirmasood</app-hello>
+    <app-hello :content="hello" />
 
     <app-blog :content="blog" />
 
@@ -19,6 +19,7 @@
 <script>
 export default {
   async asyncData({ $content }) {
+    const hello = await $content('hello-welcome').fetch()
     const about = await $content('about').fetch()
     const projects = await $content('projects').fetch()
     const blog = await $content('blog').fetch()
@@ -35,6 +36,7 @@ export default {
       books,
       arts,
       connects,
+      hello,
       aboutWelcome,
     }
   },

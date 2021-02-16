@@ -36,11 +36,22 @@
       <h1
         class="text-6xl w-full font-heading bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500"
       >
-        <slot />
+        <nuxt-content :document="content" />
       </h1>
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  props: {
+    content: {
+      type: Array,
+      default: () => [],
+    },
+  },
+}
+</script>
 
 <style scoped>
 @-webkit-keyframes hand-shake {
