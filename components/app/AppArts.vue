@@ -3,6 +3,7 @@
     <div class="container mx-auto mt-64 mb-8 px-4 sm:px-16">
       <h1 class="text-gray-900 font-bold text-3xl">Arts</h1>
       <span class="text-blue-500">______</span>
+      <nuxt-content class="my-16" :document="welcome" />
     </div>
     <div class="magic-grid mx-auto mb-64 mt-16">
       <div
@@ -23,6 +24,16 @@
 import MagicGrid from 'magic-grid'
 
 export default {
+  props: {
+    content: {
+      type: Array,
+      default: () => [],
+    },
+    welcome: {
+      type: Object,
+      default: () => {},
+    },
+  },
   data() {
     return {
       magicGrid: null,

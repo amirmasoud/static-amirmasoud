@@ -10,7 +10,7 @@
 
     <app-books :content="books" />
 
-    <app-arts :content="arts" />
+    <app-arts :content="arts" :welcome="artsWelcome" />
 
     <app-connect :content="connects" />
   </div>
@@ -28,6 +28,7 @@ export default {
     const connects = await $content('connects').fetch()
 
     const aboutWelcome = await $content('about-welcome').fetch()
+    const artsWelcome = await $content('arts-welcome').fetch()
 
     return {
       about,
@@ -38,6 +39,7 @@ export default {
       connects,
       hello,
       aboutWelcome,
+      artsWelcome,
     }
   },
 }
