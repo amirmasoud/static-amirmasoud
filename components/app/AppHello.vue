@@ -46,8 +46,8 @@
 export default {
   props: {
     content: {
-      type: Array,
-      default: () => [],
+      type: Object,
+      default: () => {},
     },
   },
 }
