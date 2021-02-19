@@ -7,5 +7,5 @@ active: false
 
 WordPress theme development
 
-* Customize WordPress themes and plugins for customers requirements
-* Deploy and support WordPress sites
+* Customized WordPress themes and plugins for customers requirements
+* Deployed and support WordPress sites
