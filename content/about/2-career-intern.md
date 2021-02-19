@@ -5,7 +5,5 @@ title: Intern WordPress Developer - Local Startup in Isfahan, Iran
 active: false
 ---
 
-WordPress theme development
-
 * Customized WordPress themes and plugins for customers requirements
 * Deployed and support WordPress sites
