@@ -20,7 +20,7 @@
 export default {
   async asyncData({ $content }) {
     const hello = await $content('hello-welcome').fetch()
-    const about = await $content('about').fetch()
+    const about = await $content('about').sortBy('slug', 'desc').fetch()
     const projects = await $content('projects').fetch()
     const blog = await $content('blog').fetch()
     const books = await $content('books').fetch()

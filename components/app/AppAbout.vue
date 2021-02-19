@@ -84,7 +84,7 @@
             <div
               class="md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0"
             >
-              <nuxt-content :document="c" />
+              <nuxt-content :document="c" class="prose" />
             </div>
           </div>
         </article>
