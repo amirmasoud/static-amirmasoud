@@ -1,9 +1,17 @@
 // tailwind.config.js
 const defaultTheme = require('tailwindcss/defaultTheme')
+const colors = require('tailwindcss/colors')
 
 module.exports = {
   darkMode: 'class',
   theme: {
+    colors: {
+      ...colors,
+      transparent: 'transparent',
+      current: 'currentColor',
+      orange: colors.orange,
+      pink: colors.pink,
+    },
     extend: {
       fontFamily: {
         heading: ['Antic Didone', ...defaultTheme.fontFamily.sans],
