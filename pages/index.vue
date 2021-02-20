@@ -2,6 +2,8 @@
   <div class="bg-gray-50">
     <app-hello :content="hello" />
 
+    <app-bio :content="bio" />
+
     <app-blog :content="blog" />
 
     <app-about :content="about" :welcome="aboutWelcome" />
@@ -26,6 +28,7 @@ export default {
     const books = await $content('books').fetch()
     const arts = await $content('arts').fetch()
     const connects = await $content('connects').fetch()
+    const bio = await $content('bio').fetch()
 
     const aboutWelcome = await $content('about-welcome').fetch()
     const artsWelcome = await $content('arts-welcome').fetch()
@@ -39,6 +42,7 @@ export default {
       arts,
       connects,
       hello,
+      bio,
       aboutWelcome,
       artsWelcome,
       ProjectsWelcome,
