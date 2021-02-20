@@ -1,7 +1,8 @@
 ---
 from: Feb 2018
 to: Jun 2018
-title: Teacher Assistant for Software Development Management, Shahid Beheshti University
+title: Teacher Assistant for Software Development Management
+company: Shahid Beheshti University
 location: Tehran, Iran
 active: false
 show: false

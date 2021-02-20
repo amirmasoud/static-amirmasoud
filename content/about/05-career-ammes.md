@@ -2,6 +2,7 @@
 from: May 2015
 to: Jul 2015
 title: Volunteer WordPress Developer
+company: American ME and CFS Society
 location: USA (remote)
 active: false
 ---

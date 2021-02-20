@@ -1,8 +1,9 @@
 ---
 from: Sep 2011
 to: Sep 2016
-title: BSc, Computer Software Engineering - Kashan University
+title: BSc, Computer Software Engineering
 location: Kashan, Iran
+university: Kashan University
 active: false
 ---
 

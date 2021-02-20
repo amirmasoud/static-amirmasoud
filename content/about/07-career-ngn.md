@@ -1,7 +1,8 @@
 ---
 from: Oct 2016
 to: Jun 2017
-title: Full-stack developer, New Generation Network Engineering Co. Ltd., Tehran, Iran
+title: Full-stack developer
+company: New Generation Network Engineering Co.
 location: Tehran, Iran
 active: false
 ---

@@ -79,17 +79,34 @@
                   stroke="currentColor"
                   class="text-gray-200"
                 ></path></svg
-              >{{ c.from }} ― {{ c.to }}</time
+              >{{ c.from }} <span v-if="c.to" class="px-1">―</span>
+              {{ c.to }}</time
             >
             <div
               class="md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0"
             >
-              <div class="flex flex-wrap mb-4">
+              <div class="flex flex-wrap mb-2 mt-2">
                 <icon-location
                   class="w-6 h-6 p-1 bg-gradient-to-br from-indigo-400 to-indigo-700 rounded-md text-indigo-50"
                 />
                 <span class="px-2 text-sm text-gray-500 flex self-center">{{
                   c.location
+                }}</span>
+              </div>
+              <div v-if="c.company" class="flex flex-wrap mb-4">
+                <icon-briefcase
+                  class="w-6 h-6 p-1 bg-gradient-to-br from-blue-400 to-blue-700 rounded-md text-blue-50"
+                />
+                <span class="px-2 text-sm text-gray-500 flex self-center">{{
+                  c.company
+                }}</span>
+              </div>
+              <div v-if="c.university" class="flex flex-wrap mb-4">
+                <icon-academic
+                  class="w-6 h-6 p-1 bg-gradient-to-br from-green-400 to-green-700 rounded-md text-green-50"
+                />
+                <span class="px-2 text-sm text-gray-500 flex self-center">{{
+                  c.university
                 }}</span>
               </div>
               <nuxt-content :document="c" class="prose" />

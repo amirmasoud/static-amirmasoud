@@ -1,7 +1,8 @@
 ---
 from: Jun 2018
 to: Dec 2018
-title: Contract Web Developer, Diar Farhang Ariya Co.
+title: Contract Web Developer
+company: Diar Farhang Ariya Co.
 location: Tehran, Iran (remote)
 active: false
 ---
