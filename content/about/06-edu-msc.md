@@ -1,7 +1,8 @@
 ---
 from: 2016
 to: 2019
-title: MSc, Information Technology Engineering, Multimedia Systems, Shahid Beheshti University, Tehran, Iran
+title: MSc, Information Technology Engineering, Multimedia Systems, Shahid Beheshti University
+location: Tehran, Iran
 active: false
 ---
 

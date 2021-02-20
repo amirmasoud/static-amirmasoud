@@ -1,7 +1,8 @@
 ---
 from: Oct 2017
 to: Mar 2018
-title: Drupal Developer, PAND (Pouyeshgaran Nik Daneshgar) Co., Tehran, Iran
+title: Drupal Developer, PAND (Pouyeshgaran Nik Daneshgar) Co.
+location: Tehran, Iran
 active: false
 ---
 

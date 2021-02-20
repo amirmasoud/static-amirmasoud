@@ -1,7 +1,8 @@
 ---
 from: Nov 2015
-to: 
-title: PHP Developer - Jooyeshgar Co., Isfahan, Iran
+to:
+title: PHP Developer - Jooyeshgar Co.
+location: Isfahan, Iran
 active: false
 show: false
 ---

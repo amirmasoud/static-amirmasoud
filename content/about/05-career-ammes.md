@@ -1,7 +1,8 @@
 ---
 from: May 2015
 to: Jul 2015
-title: Volunteer WordPress Developer, Remote (USA)
+title: Volunteer WordPress Developer
+location: USA (remote)
 active: false
 ---
 

@@ -2,6 +2,7 @@
 from: Sep 2011
 to: Sep 2016
 title: BSc, Computer Software Engineering - Kashan University
+location: Kashan, Iran
 active: false
 ---
 

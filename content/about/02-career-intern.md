@@ -1,7 +1,8 @@
 ---
 from: Jul 2015
 to: Sep 2015
-title: Intern WordPress Developer - Local Startup in Isfahan, Iran
+title: Intern WordPress Developer - Local Startup
+location: Isfahan, Iran (remote)
 active: false
 ---
 

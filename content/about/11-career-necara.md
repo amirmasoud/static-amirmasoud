@@ -2,6 +2,7 @@
 from: Jun 2019
 to: Nov 2019
 title: Full-stack developer, Necara GmbH Co., Germany (Remote)
+location: Germany (remote)
 active: false
 ---
 

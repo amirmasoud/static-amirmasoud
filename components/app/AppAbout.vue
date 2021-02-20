@@ -6,7 +6,7 @@
     <nuxt-content :document="welcome" class="about-welcome prose mt-16" />
 
     <ul class="rounded-3xl mt-20">
-      <li v-for="(c, idx) in content" v-show="c.show != false" :key="c.slug">
+      <li v-for="(c, idx) in filteredContent" :key="c.slug">
         <article>
           <div
             class="grid md:grid-cols-8 xl:grid-cols-9 items-start relative p-3 sm:p-5 xl:p-6 overflow-hidden"
@@ -35,7 +35,7 @@
                   stroke-width="2"
                 ></circle>
                 <path
-                  v-if="content.length - 1"
+                  v-if="filteredContent.length - 1"
                   d="M 6 18 V 500"
                   fill="none"
                   stroke-width="2"
@@ -45,7 +45,7 @@
               </svg>
 
               <svg
-                v-else-if="idx == content.length - 1"
+                v-else-if="idx == filteredContent.length - 1"
                 viewBox="0 0 12 12"
                 class="w-3 h-3 mr-6 overflow-visible text-gray-300"
               >
@@ -84,12 +84,37 @@
             <div
               class="md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0"
             >
+              <div class="flex flex-wrap mb-4">
+                <icon-location
+                  class="w-6 h-6 p-1 bg-gradient-to-br from-indigo-400 to-indigo-700 rounded-md text-indigo-50"
+                />
+                <span class="px-2 text-sm text-gray-500 flex self-center">{{
+                  c.location
+                }}</span>
+              </div>
               <nuxt-content :document="c" class="prose" />
             </div>
           </div>
         </article>
       </li>
     </ul>
+
+    <button
+      v-if="detail == 0"
+      class="bg-blue-500 px-4 py-2 rounded-full text-white text-sm mx-auto block mt-16"
+      type="button"
+      @click="detail = 1"
+    >
+      I can show you more positions!
+    </button>
+    <button
+      v-if="detail == 1"
+      class="bg-blue-500 px-4 py-2 rounded-full text-white text-sm mx-auto block mt-16"
+      type="button"
+      @click="detail = 2"
+    >
+      Down for even more details?!
+    </button>
   </section>
 </template>
 
@@ -103,6 +128,19 @@ export default {
     welcome: {
       type: Object,
       default: () => {},
+    },
+  },
+  data: () => ({
+    detail: 0,
+  }),
+  computed: {
+    filteredContent() {
+      if (!this.detail) {
+        return this.content.filter((c) => c.show !== false)
+      } else {
+        // (this.detail === 1)
+        return this.content
+      }
     },
   },
 }

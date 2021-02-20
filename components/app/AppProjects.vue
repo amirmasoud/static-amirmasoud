@@ -2,6 +2,7 @@
   <section id="projects" class="container mx-auto mt-64 px-4 sm:px-16">
     <h1 class="text-gray-900 font-bold text-3xl">Projects</h1>
     <span class="text-blue-500">______</span>
+    <nuxt-content class="prose mt-12" :document="welcome"></nuxt-content>
     <ul class="mt-16">
       <li v-for="c in content" :key="c.slug" class="mb-16">
         <h2 class="font-bold">{{ c.title }}</h2>
@@ -20,6 +21,10 @@ export default {
     content: {
       type: Array,
       default: () => [],
+    },
+    welcome: {
+      type: Object,
+      default: () => {},
     },
   },
 }
