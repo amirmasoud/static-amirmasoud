@@ -5,6 +5,5 @@ title: BSc, Computer Software Engineering - Kashan University
 active: false
 ---
 
-Final thesis on recommender systems and e-commerce using PHP
-
-GPA: 2.81 / 4
+* Final thesis on recommender systems and e-commerce using PHP
+* GPA: 2.81 / 4

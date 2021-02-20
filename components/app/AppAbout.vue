@@ -6,7 +6,7 @@
     <nuxt-content :document="welcome" class="about-welcome prose mt-16" />
 
     <ul class="rounded-3xl mt-20">
-      <li v-for="(c, idx) in content" :key="c.slug">
+      <li v-for="(c, idx) in content" v-show="c.show != false" :key="c.slug">
         <article>
           <div
             class="grid md:grid-cols-8 xl:grid-cols-9 items-start relative p-3 sm:p-5 xl:p-6 overflow-hidden"
