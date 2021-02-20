@@ -17,7 +17,7 @@
               {{ c.title }}
             </h3>
             <time
-              :datetime="formatDate(c.time)"
+              :datetime="formatDate(c.from)"
               class="md:col-start-1 md:col-span-2 row-start-1 md:row-end-3 flex items-center font-medium mb-1 md:mb-0"
             >
               <svg
@@ -162,7 +162,6 @@ export default {
   },
   methods: {
     formatDate(date) {
-      console.log(date)
       return this.$moment(date, 'MMM YYYY').format('YYYY-MM')
     },
   },
