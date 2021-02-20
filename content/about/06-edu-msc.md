@@ -1,6 +1,6 @@
 ---
-from: 2016
-to: 2019
+from: Sep 2016
+to: Sep 2019
 title: MSc, Information Technology Engineering, Multimedia Systems
 university: Shahid Beheshti University
 location: Tehran, Iran

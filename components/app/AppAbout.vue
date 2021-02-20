@@ -17,7 +17,7 @@
               {{ c.title }}
             </h3>
             <time
-              datetime="2020-10-07T13:00:00.000Z"
+              :datetime="formatDate(c.time)"
               class="md:col-start-1 md:col-span-2 row-start-1 md:row-end-3 flex items-center font-medium mb-1 md:mb-0"
             >
               <svg
@@ -158,6 +158,12 @@ export default {
         // (this.detail === 1)
         return this.content
       }
+    },
+  },
+  methods: {
+    formatDate(date) {
+      console.log(date)
+      return this.$moment(date, 'MMM YYYY').format('YYYY-MM')
     },
   },
 }

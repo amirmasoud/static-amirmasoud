@@ -1,5 +1,5 @@
 ---
-from: 2020
+from: Sep 2020
 to: 2024 (exp.)
 title: Ph.D., Computer Engineering, Artificial Intelligence
 university: Isfahan University of Technology
