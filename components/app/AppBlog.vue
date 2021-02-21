@@ -13,8 +13,10 @@
           {{ c.tags }}
         </div>
         <div class="flex-grow">
-          {{ c.title }}
-          <span class="text-gray-900">&rarr; ({{ c.createdAt }})</span>
+          {{ c.title }} &rarr;
+          <time class="text-gray-400 block">
+            {{ $moment(c.createdAt, 'YYYY-MM-DDTHH:mm:ssZ').fromNow() }}
+          </time>
         </div>
       </li>
     </ul>
