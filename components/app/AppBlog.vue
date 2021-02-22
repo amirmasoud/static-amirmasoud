@@ -6,7 +6,7 @@
       <li v-for="c in content" :key="c.slug" class="capitalize mb-4 flex">
         <div
           :class="
-            `flex-shrink w-1/12 text-center self-center p-1 rounded-md text-xs mr-4 ` +
+            `flex-shrink w-1/12 text-center self-start p-1 mt-1 rounded-md text-xs mr-4 ` +
             tagColor(c.tags)
           "
         >
