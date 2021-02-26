@@ -2,8 +2,12 @@
   <section id="books" class="container mx-auto my-64 px-4 sm:px-16">
     <h1 class="text-gray-900 font-bold text-3xl">Books</h1>
     <span class="text-blue-500">______</span>
+    <div>
+      <button type="button" @click.prevent="language = 'en'">English</button>
+      <button type="button" @click.prevent="language = 'fa'">فارسی</button>
+    </div>
     <div class="my-16 flex space-x-8">
-      <div v-for="c in content" :key="c.slug" class="">
+      <div v-for="c in filteredContent" :key="c.slug" class="">
         <img class="rounded-lg shadow-lg mb-4" :src="c.cover" />
         <div class="mb-8">
           <span
@@ -26,6 +30,14 @@ export default {
     content: {
       type: Array,
       default: () => [],
+    },
+  },
+  data: () => ({
+    language: 'en',
+  }),
+  computed: {
+    filteredContent() {
+      return this.content.filter((c) => c.language === this.language)
     },
   },
 }
