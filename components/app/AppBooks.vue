@@ -3,8 +3,20 @@
     <h1 class="text-gray-900 font-bold text-3xl">Books</h1>
     <span class="text-blue-500">______</span>
     <div>
-      <button type="button" @click.prevent="language = 'en'">English</button>
-      <button type="button" @click.prevent="language = 'fa'">فارسی</button>
+      <button
+        type="button"
+        :class="{ 'text-rose-400': language === 'en' }"
+        @click.prevent="language = 'en'"
+      >
+        English
+      </button>
+      <button
+        type="button"
+        :class="{ 'text-rose-400': language === 'fa' }"
+        @click.prevent="language = 'fa'"
+      >
+        فارسی
+      </button>
     </div>
     <div class="my-16 flex space-x-8">
       <div v-for="c in filteredContent" :key="c.slug" class="">
