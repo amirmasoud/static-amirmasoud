@@ -2,17 +2,17 @@
   <section id="books" class="container mx-auto my-64 px-4 sm:px-16">
     <h1 class="text-gray-900 font-bold text-3xl">Books</h1>
     <span class="text-blue-500">______</span>
-    <div>
+    <div class="text-center space-x-12">
       <button
         type="button"
-        :class="{ 'text-rose-400': language === 'en' }"
+        :class="{ 'language-active': language === 'en' }"
         @click.prevent="language = 'en'"
       >
         English
       </button>
       <button
         type="button"
-        :class="{ 'text-rose-400': language === 'fa' }"
+        :class="{ 'language-active': language === 'fa' }"
         @click.prevent="language = 'fa'"
       >
         فارسی
@@ -54,3 +54,9 @@ export default {
   },
 }
 </script>
+
+<style>
+.language-active {
+  @apply border-b-8 border-rose-400 text-rose-900;
+}
+</style>
