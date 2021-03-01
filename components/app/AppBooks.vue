@@ -57,6 +57,6 @@ export default {
 
 <style>
 .language-active {
-  @apply border-b-8 border-rose-400 text-rose-900;
+  @apply border-b-8 border-blue-400 text-blue-900;
 }
 </style>
