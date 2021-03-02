@@ -5,9 +5,10 @@
     <a class="" href="#">Amirmasoud Sheydaei</a>
     <span class="hidden sm:inline text-gray-200">|</span>
     <a class="" href="#">Blog</a>
+    <a class="" href="#">About</a>
     <a class="" href="#">Project</a>
     <a class="" href="#">Books</a>
     <a class="" href="#">Arts</a>
-    <a class="" href="#">About</a>
+    <a class="" href="#">Connect</a>
   </nav>
 </template>
