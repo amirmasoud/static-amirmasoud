@@ -4,11 +4,11 @@
   >
     <a class="" href="#">Amirmasoud Sheydaei</a>
     <span class="hidden sm:inline text-gray-200">|</span>
-    <a class="" href="#">Blog</a>
-    <a class="" href="#">About</a>
-    <a class="" href="#">Project</a>
-    <a class="" href="#">Books</a>
-    <a class="" href="#">Arts</a>
-    <a class="" href="#">Connect</a>
+    <a v-smooth-scroll class="" href="#blog">Blog</a>
+    <a v-smooth-scroll class="" href="#about">About</a>
+    <a v-smooth-scroll class="" href="#projects">Projects</a>
+    <a v-smooth-scroll class="" href="#books">Books</a>
+    <a v-smooth-scroll class="" href="#arts">Arts</a>
+    <a v-smooth-scroll class="" href="#connect">Connect</a>
   </nav>
 </template>
