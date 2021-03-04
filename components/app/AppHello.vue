@@ -5,7 +5,7 @@
   >
     <div class="space-y-14">
       <div class="flex justify-center">
-        <icon-shake-svg />
+        <icon-hand-shake />
       </div>
       <h1
         class="text-6xl w-full font-heading bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500"
