@@ -1,1 +1,1 @@
-Hello World for Arts.
+My alternative life would be becoming an artist who lives in a shed an paints his life by a brush and steps back and take a deeper look at if it shows what it should show. Here are some, that imaginary artist also has camera to take amature photos.
