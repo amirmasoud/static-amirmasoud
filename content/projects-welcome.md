@@ -1,1 +1,1 @@
-And there are side projects for every little sparkle; here are some:
+These tiny little things are those who keeps me excited and drive me to strive more. To be honest most of these projects are completely dead, and here is a list corpses I have under my bed, are you interested in them? Most of them never had a shot at life and died to early, some were luckier than the other. 
