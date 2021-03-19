@@ -3,7 +3,7 @@
     <div class="container mx-auto mt-64 mb-8 px-4 sm:px-16">
       <h1 class="text-gray-900 font-bold text-3xl">Arts</h1>
       <span class="text-blue-500">______</span>
-      <nuxt-content class="my-16" :document="welcome" />
+      <nuxt-content class="my-16" :document="intro" />
     </div>
     <div class="magic-grid mx-auto mb-64 mt-16">
       <div
@@ -30,6 +30,8 @@ export default {
     },
   },
   async fetch() {
+    this.intro = await this.$content('arts-welcome')
+
     this.photos = await fetch(
       'https://unsplash.com/napi/users/amirmasoud32/photos?per_page=20&order_by=latest&page=1'
     ).then((res) => res.json())
@@ -39,6 +41,7 @@ export default {
       magicGrid: null,
       loadingGrid: true,
       photos: [],
+      intro: '',
     }
   },
   mounted() {
