@@ -7,14 +7,13 @@
     </div>
     <div class="magic-grid mx-auto mb-64 mt-16">
       <div
-        v-for="(img, idx) in Array(1)"
-        :key="idx"
+        v-for="img in photos"
+        :key="img.id"
         class="flex justify-center items-center w-64"
       >
-        <img
-          class="rounded-md shadow-md"
-          :src="`https://source.unsplash.com/random/${idx + 1}`"
-        />
+        <a v-if="img" :href="img.links.html">
+          <img class="rounded-md shadow-md" :src="img.urls.small" />
+        </a>
       </div>
     </div>
   </section>
@@ -25,19 +24,21 @@ import MagicGrid from 'magic-grid'
 
 export default {
   props: {
-    content: {
-      type: Array,
-      default: () => [],
-    },
     welcome: {
       type: Object,
       default: () => {},
     },
   },
+  async fetch() {
+    this.photos = await fetch(
+      'https://unsplash.com/napi/users/amirmasoud32/photos?per_page=20&order_by=latest&page=1'
+    ).then((res) => res.json())
+  },
   data() {
     return {
       magicGrid: null,
       loadingGrid: true,
+      photos: [],
     }
   },
   mounted() {
@@ -45,7 +46,7 @@ export default {
       container: '.magic-grid',
       animate: true,
       gutter: 20,
-      items: 1,
+      items: 10,
       useMin: true,
       maxColumns: 6,
     })

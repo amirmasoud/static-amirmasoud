@@ -12,7 +12,7 @@
 
     <app-books :content="books" />
 
-    <app-arts :content="arts" :welcome="artsWelcome" />
+    <app-arts :welcome="artsWelcome" />
 
     <app-connect :content="connects" />
   </div>
@@ -26,7 +26,6 @@ export default {
     const projects = await $content('projects').fetch()
     const blog = await $content('blog').fetch()
     const books = await $content('books').fetch()
-    const arts = await $content('arts').fetch()
     const connects = await $content('connects').fetch()
     const bio = await $content('bio').fetch()
 
@@ -39,7 +38,6 @@ export default {
       projects,
       blog,
       books,
-      arts,
       connects,
       hello,
       bio,
