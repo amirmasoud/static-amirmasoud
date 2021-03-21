@@ -30,7 +30,7 @@ export default {
     },
   },
   async fetch() {
-    this.intro = await this.$content('arts-welcome')
+    // this.intro = await this.$content('arts-welcome')
 
     this.photos = await fetch(
       'https://unsplash.com/napi/users/amirmasoud32/photos?per_page=20&order_by=latest&page=1'
