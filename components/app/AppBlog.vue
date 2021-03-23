@@ -13,7 +13,7 @@
           {{ c.tags }}
         </div>
         <div class="flex-grow">
-          {{ c.title }} &rarr;
+          <nuxt-link :to="`blog/${c.slug}`">{{ c.title }} &rarr;</nuxt-link>
           <time class="text-gray-400 block">
             {{ $moment(c.createdAt, 'YYYY-MM-DDTHH:mm:ssZ').fromNow() }}
           </time>
