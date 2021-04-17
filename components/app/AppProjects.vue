@@ -21,6 +21,9 @@
           >GitHub ↗</a
         >
       </li>
+      <li v-for="c in olderProjects" :key="c.slug" class="mb-16">
+        <nuxt-content class="my-4 text-gray-600" :document="c" />
+      </li>
     </ul>
   </section>
 </template>
