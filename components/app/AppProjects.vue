@@ -9,7 +9,14 @@
         <span class="block text-gray-600 font-bold text-xs"
           >{{ c.from }} - {{ c.to }}</span
         >
-        <nuxt-content class="mt-4 text-gray-600" :document="c" />
+        <nuxt-content class="my-4 text-gray-600" :document="c" />
+        <a
+          v-if="c.github"
+          :href="c.github"
+          target="_blank"
+          class="text-xs font-bold text-warmGray-500"
+          >GitHub ↗</a
+        >
       </li>
     </ul>
   </section>
