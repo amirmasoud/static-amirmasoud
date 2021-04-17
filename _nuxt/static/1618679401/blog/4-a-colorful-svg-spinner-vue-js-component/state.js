@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a,b){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1618679401",layout:"default",error:null,serverRendered:a,routePath:"\u002Fblog\u002F4-a-colorful-svg-spinner-vue-js-component",config:{content:{dbHash:"c41d69b2"}},colorMode:{preference:b,value:b,unknown:a,forced:false}}}(true,"system"));
