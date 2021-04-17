@@ -4,7 +4,7 @@
     <span class="text-blue-500">______</span>
     <nuxt-content class="prose mt-12" :document="welcome"></nuxt-content>
     <ul class="mt-16">
-      <li v-for="c in content" :key="c.slug" class="mb-16">
+      <li v-for="c in recentProjects" :key="c.slug" class="mb-16">
         <h2 class="font-bold">{{ c.title }}</h2>
         <h3 v-if="c.subtitle" class="text-sm text-gray-600 mb-2">
           {{ c.subtitle }}
@@ -35,6 +35,14 @@ export default {
     welcome: {
       type: Object,
       default: () => {},
+    },
+  },
+  computed: {
+    recentProjects() {
+      return this.content.filter((c) => c.from !== 1992)
+    },
+    olderProjects() {
+      return this.content.filter((c) => c.from === 1992)
     },
   },
 }
