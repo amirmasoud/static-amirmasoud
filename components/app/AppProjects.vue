@@ -6,6 +6,9 @@
     <ul class="mt-16">
       <li v-for="c in content" :key="c.slug" class="mb-16">
         <h2 class="font-bold">{{ c.title }}</h2>
+        <h3 v-if="c.subtitle" class="text-sm text-gray-600 mb-2">
+          {{ c.subtitle }}
+        </h3>
         <span class="block text-gray-600 font-bold text-xs"
           >{{ c.from }}<template v-if="c.to"> - {{ c.to }}</template></span
         >
