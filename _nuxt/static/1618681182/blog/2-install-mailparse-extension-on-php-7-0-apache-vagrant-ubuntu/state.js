@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a,b){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1618681182",layout:"default",error:null,serverRendered:a,routePath:"\u002Fblog\u002F2-install-mailparse-extension-on-php-7-0-apache-vagrant-ubuntu",config:{content:{dbHash:"2d3bb5b8"}},colorMode:{preference:b,value:b,unknown:a,forced:false}}}(true,"system"));
