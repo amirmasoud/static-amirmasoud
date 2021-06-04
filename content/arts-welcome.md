@@ -1,1 +1,1 @@
-My alternative life would be becoming an artist who lives in a shed far from social life an paints things by a brush or pen and steps back and take a deeper look at it. Here are some, that that imaginary artist also has a camera to take amature photos. I also like to be a gamer, having a high end PC, playing various game as your full-time job and not leaving your home seems like a dream came true for me.
+My alternative life is to be content creator who lives his own life and has his own 1-person bussiness.
