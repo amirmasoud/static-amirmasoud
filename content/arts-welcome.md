@@ -1,1 +1,1 @@
-My alternative life is to be content creator who lives his own life and has his own 1-person bussiness.
+My alternative life is to be content creator who lives his own tiny life and has his own 1-person bussiness.
