@@ -5,9 +5,9 @@ Tech:
 
 How To:
   Dev:
-    - yarn && yarn dev
+    - `yarn && yarn dev`
   Prod:
-    - yarn && yarn build && yarn start
+    - `yarn && yarn build && yarn start`
   Static:
-    - yarn && yarn generate
-    - server ./build direcory
+    - `yarn && yarn generate`
+    - `server ./build direcory`
