@@ -13,5 +13,5 @@ How To:
   Static:
   
     - `yarn && yarn generate`
-    
+
     - `server ./build direcory`
